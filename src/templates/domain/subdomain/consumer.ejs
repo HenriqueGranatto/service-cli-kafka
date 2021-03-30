@@ -1,0 +1,14 @@
+const Model = require('./model')
+const <%= props.subdomain %>Consumer = require('../../kafka/consumers/<%= props.subdomain %>')
+
+class Consumer
+{
+    static subscribe()
+    {
+        <%- props.subscribers %>
+    }
+
+    <%- props.methods %>
+}
+
+module.exports = Consumer

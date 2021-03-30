@@ -1,0 +1,9 @@
+const Model = require('./model')
+const <%= props.subdomain %>KafkaProducer = require('../../kafka/producers/<%= props.subdomain %>')
+
+class Producer
+{
+    <%- props.methods %>
+}
+
+module.exports = Producer

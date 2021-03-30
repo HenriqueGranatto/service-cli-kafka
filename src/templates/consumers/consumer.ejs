@@ -1,0 +1,23 @@
+const Kafka = require('../server')
+
+class <%= props.subdomain %>Consumer
+{
+    constructor()
+    {
+        this.subcribers = []
+    }
+
+    addSubcriber(topic, callback)
+    {
+        this.subcribers.push({topic, callback})
+    }
+
+    async init()
+    {
+        <%- props.initMethods %>
+    }
+
+    <%- props.methods %>
+}
+
+module.exports = new <%= props.subdomain %>Consumer()

@@ -1,0 +1,8 @@
+const Kafka = require('../server')
+
+class <%= props.subdomain %>Producer
+{
+    <%- props.methods %>
+}
+
+module.exports = new <%= props.subdomain %>Producer()
