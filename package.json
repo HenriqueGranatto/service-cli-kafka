@@ -1,0 +1,25 @@
+{
+  "license": "ISC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "name": "service-cli-kafka",
+  "author": "Henrique Granatto",
+  "description": "A CLI for service-cli-kafka.",
+  "homepage": "https://github.com/HenriqueGranatto/service-cli-kafka#readme",
+  "directories": 
+  {
+    "doc": "docs",
+    "commands": "commands",
+    "templates": "templates",
+    "extensions": "extensions"
+  },
+  "repository": 
+  {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueGranatto/service-cli-kafka.git"
+  },
+  "bugs": 
+  {
+    "url": "https://github.com/HenriqueGranatto/service-cli-kafka/issues"
+  }
+}
