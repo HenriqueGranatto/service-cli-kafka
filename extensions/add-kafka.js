@@ -1,6 +1,9 @@
 module.exports = (toolbox) =>
 {
-    toolbox.validate = validate
+    if(toolbox.parameters.command == 'add:kafka')
+    {
+        toolbox.validate = validate
+    }
 }
 
 const validate = (toolbox) =>
