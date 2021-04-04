@@ -6,20 +6,20 @@
   "author": "Henrique Granatto",
   "description": "A CLI for service-cli-kafka.",
   "homepage": "https://github.com/HenriqueGranatto/service-cli-kafka#readme",
-  "directories": 
-  {
+  "directories": {
     "doc": "docs",
     "commands": "commands",
     "templates": "templates",
     "extensions": "extensions"
   },
-  "repository": 
-  {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/HenriqueGranatto/service-cli-kafka.git"
   },
-  "bugs": 
-  {
+  "bugs": {
     "url": "https://github.com/HenriqueGranatto/service-cli-kafka/issues"
+  },
+  "dependencies": {
+    "kafkajs": "^1.15.0"
   }
 }
