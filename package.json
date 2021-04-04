@@ -4,7 +4,7 @@
   "main": "index.js",
   "name": "service-cli-kafka",
   "author": "Henrique Granatto",
-  "description": "A CLI for service-cli-kafka.",
+  "description": "A CLI for service-cli.",
   "homepage": "https://github.com/HenriqueGranatto/service-cli-kafka#readme",
   "directories": {
     "doc": "docs",
