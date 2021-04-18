@@ -1,0 +1,31 @@
+{
+    "consumers":
+    [
+        {
+            "subdomain": "subdomain",
+            "data":
+            [
+                {
+                    "topic": "topic",
+                    "groupId": "groupId",
+                    "fromBeginning": true
+                }
+            ]
+        }
+    ],
+    "producers":
+    [
+        {
+            "subdomain": "subdomain",
+            "data":
+            [
+                {
+                    "retry": true,
+                    "topic": "topic",
+                    "maxRetryTime": 500,
+                    "idempotent": false
+                }
+            ]
+        }
+    ]
+}
