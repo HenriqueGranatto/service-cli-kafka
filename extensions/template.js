@@ -54,7 +54,7 @@ const createModule = async (toolbox) =>
     toolbox.print.success("- Adicionando: configurações do módulo no arquivo .env")
     let env = `# Configurações do Kafka\n`
     env += `KAFKA_CLIENT_ID=\n`
-    env += `KAFKA_BROKERS=\n`
+    env += `KAFKA_BROKERS=`
     toolbox.filesystem.append('.env', env)
 
     toolbox.print.success("- Adicionando: módulo no arquivo service.js")
