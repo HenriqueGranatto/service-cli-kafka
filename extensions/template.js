@@ -1,11 +1,14 @@
 module.exports = (toolbox) =>
 {
-    toolbox.readTemplate = readTemplate
-    toolbox.createModule = createModule
-    toolbox.createConsumers = createConsumers
-    toolbox.createProducers = createProducers
-    toolbox.createDomainConsumers = createDomainConsumers
-    toolbox.createDomainProducers = createDomainProducers
+    if(toolbox.parameters.command == 'add:mongo')
+    {
+        toolbox.readTemplate = readTemplate
+        toolbox.createModule = createModule
+        toolbox.createConsumers = createConsumers
+        toolbox.createProducers = createProducers
+        toolbox.createDomainConsumers = createDomainConsumers
+        toolbox.createDomainProducers = createDomainProducers
+    }
 }
 
 const readTemplate = async (toolbox, module) =>
