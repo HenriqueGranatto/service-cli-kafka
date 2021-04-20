@@ -1,6 +1,6 @@
 module.exports = (toolbox) =>
 {
-    if(toolbox.parameters.command == 'add:mongo')
+    if(toolbox.parameters.command == 'add:kafka')
     {
         toolbox.readTemplate = readTemplate
         toolbox.createModule = createModule
