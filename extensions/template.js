@@ -200,7 +200,7 @@ const createDomainConsumers = (toolbox, consumers) =>
         {
             toolbox.print.success(`tópico: ${topic.topic}`)
 
-            consumerProps.subscribers += `${consumerProps.subdomain}Consumer.addSubcriber({topic: '${topic.topic}', callback: Consumer.${topic.topic}})\n\t\t`
+            consumerProps.subscribers += `KafkaConsumer.addSubcriber({topic: '${topic.topic}', callback: Consumer.${topic.topic}})\n\t\t`
 
             consumerProps.methods +=
 `
@@ -242,7 +242,7 @@ const createDomainProducers = (toolbox, producers) =>
     static ${topic.topic}(message)
     {
         const message = {key, data}
-        ${producerProps.subdomain}KafkaProducer.${topic.topic}(message)
+        KafkaProducer.${topic.topic}(message)
     }
 `
         })
