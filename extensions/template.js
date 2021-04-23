@@ -25,10 +25,9 @@ const readTemplate = async (toolbox, module) =>
     toolbox.print.success("- Template encontrado")
     module.template.data = JSON.parse(module.template.data)
 
-    const consumers = module.template.data.consumers
-    const producers = module.template.data.producers
+    const data = module.template.data
 
-    return {consumers, producers}
+    return data
 }
 
 const createModule = async (toolbox) =>
