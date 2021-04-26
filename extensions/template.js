@@ -238,7 +238,7 @@ const createDomainProducers = (toolbox, producers) =>
 
             producerProps.methods +=
 `
-    static ${topic.topic}(message)
+    static ${topic.topic}(data)
     {
         const message = {key, data}
         KafkaProducer.${topic.topic}(message)
