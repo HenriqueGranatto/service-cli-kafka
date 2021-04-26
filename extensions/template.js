@@ -213,7 +213,7 @@ const createDomainConsumers = (toolbox, consumers) =>
         await toolbox.template.generate({
             props: consumerProps,
             template: `domain/subdomain/consumer.ejs`,
-            target: `domain/${consumer.subdomain}/Consumers.js`
+            target: `domain/${consumer.subdomain}/Consumer.js`
         })
     })
 }
