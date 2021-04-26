@@ -8,8 +8,8 @@ const path = require("path")
  * Include all subscriber domain methods to Kafka Consumers
  */
 fs.readdir(path.resolve(__dirname, "..", "domain"), (err, consumers) => {
-    consumers.map(file => {
-        DomainConsumer = require(path.resolve(__dirname, "..", "domain", file, 'consumer'))
+    consumers.map(subdomain => {
+        DomainConsumer = require(path.resolve(__dirname, "..", "domain", subdomain, 'Consumer'))
         DomainConsumer.subscribe()
     });
 })
