@@ -38,12 +38,6 @@ const createModule = async (toolbox) =>
         target: `kafka/app.js`,
     })
 
-    toolbox.print.success("- Adicionando: kafka/server.js")
-    await toolbox.template.generate({
-        template: 'server.js',
-        target: `kafka/server.js`,
-    })
-
     toolbox.print.success("- Adicionando diretório: /consumers")
     await toolbox.filesystem.dir('kafka/consumers')
 
